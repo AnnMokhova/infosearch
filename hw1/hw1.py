@@ -5,7 +5,6 @@ import string
 import re
 import json
 from sklearn.feature_extraction.text import CountVectorizer
-import numpy as np
 import pickle as pkl
 
 curr_dir = os.getcwd()
