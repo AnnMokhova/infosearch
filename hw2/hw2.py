@@ -65,15 +65,16 @@ print('Ранжирование докуменов по близости к за
 def bm25(word, doc, corpus) -> float:
     N = len(corpus)
     n = 0
-    for doc in corpus:
-        if word in doc.split():
+    for t in corpus:
+        if word in t.split():
             n += 1
     idf = log((N - n + 0.5) / (n + 0.5))
     k = 2.0
     b = 0.75
-    tf = doc.count(word) / len(doc.split())
+    doc = doc.split()
+    tf = doc.count(word) / len(doc)
     avgdl = sum([len(text.split()) for text in corpus]) / len(corpus)
-    score = idf * tf * (k + 1) / (tf + k * (1 - b + b * len(doc.split()) / avgdl))
+    score = idf * tf * (k + 1) / (tf + k * (1 - b + b * len(doc) / avgdl))
     return score
 
 
