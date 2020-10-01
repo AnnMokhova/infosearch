@@ -1,2 +1,2 @@
-- `hw3_ner.ipynb` -- функции удаления именованных сущностей и создание [новой таблицы] (https://docs.google.com/spreadsheets/d/17_kgI1Jo5Ggbdgc5x7GHJvzMY0rS6Jb_s0N_e1VXPNo/edit?usp=sharing) с предобработанными текстами
+- `hw3_ner.ipynb` -- функции удаления именованных сущностей и создание [новой таблицы](https://docs.google.com/spreadsheets/d/17_kgI1Jo5Ggbdgc5x7GHJvzMY0rS6Jb_s0N_e1VXPNo/edit?usp=sharing) с предобработанными текстами
 - `hw3_accuracy.ipynb` -- поиск ближайших ответов на запросы через tf-idf и bm25, подсчет accuracy
