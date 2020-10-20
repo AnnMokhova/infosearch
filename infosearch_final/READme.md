@@ -1,0 +1,1 @@
+- `corpus.csv` -- [коллекция](https://docs.google.com/spreadsheets/d/1TfgKZktUPwXrAv3sobuRa9WW7Ctgk9GQT1Q4c8h_xjM/edit#gid=1224072571) текстов, по которым строились матрицы и векторы  
