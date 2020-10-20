@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<head>
+  <title>Поисковик</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<div class="jumbotron text-center" style='background:#FFC0CB'>
+    <h1><font face="Century Gothic">Поисковик</font></h1>
+</div>
+
+
+<div class="jumbotron text-center" style='background:#FFFAFA'>
+  <div class="row">
+	<h2><font face="Century Gothic">Введите текст запроса, чтобы найти наиболее подходящий документ</font></h2>
+	<div class="col-sm-8">
+    </div>
+  </div>
+  <form method="POST" action="/">
+    <p><textarea type="text" name="text" placeholder="Ввести текст..." rows="5" cols="50"></textarea></p>
+    <p><b>Какой поисковой метод выберем?</b></p>
+    <p><input name="method" type="radio" value="tfidf"> TF-IDF</p>
+    <p><input name="method" type="radio" value="bm25"> BM25</p>
+    <p><input name="method" type="radio" value="w2v_vector"> Word2vec через векторы</p>
+    <p><input name="method" type="radio" value="w2v_matrix"> Word2vec через матрицы</p>
+    <p><input type="submit" value="Выбрать"></p>
+  </form>
+</div></body></html>
